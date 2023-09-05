@@ -1,0 +1,43 @@
+@mixin afterIcon {
+  content: "";
+  display: block;
+  position: absolute;
+}
+@mixin widHig($w: 100%, $h: 100%) {
+  width: $w;
+  height: $h;
+}
+@mixin centerX {
+  transform: translateX(-50%);
+  left: 50%;
+}
+@mixin centerY {
+  transform: translateY(-50%);
+  top: 50%;
+}
+@mixin centerXY {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+@mixin hideFont {
+  text-indent: -999999px;
+  font-size: 0;
+}
+
+@mixin closeBtn($w, $h) {
+  @include widHig($w, $h);
+  position: relative;
+  display: block;
+  &:after,
+  &::before {
+    @include afterIcon;
+    @include widHig(2px, 100%);
+    @include centerXY;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: $color-dark-gray;
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

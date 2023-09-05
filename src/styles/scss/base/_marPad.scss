@@ -1,0 +1,58 @@
+//width
+@for $i from 1 through 10 {
+  .width-#{$i * 10} {
+    width: ($i * 10%);
+  }
+
+  input[type="number"].width-#{$i * 10} {
+    width: ($i * 10%);
+  }
+}
+.width-auto {
+  width: auto;
+}
+//margin
+.mr-4 {
+  margin-right: 4px;
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.m-TB-20 {
+  margin: 20px 0;
+}
+.m-auto {
+  margin: 0 auto;
+}
+
+//padding
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.p-LR-16 {
+  padding: 0 16px;
+}
+.p-LR-20 {
+  padding: 0 20px;
+}
