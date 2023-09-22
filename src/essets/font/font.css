@@ -2,23 +2,23 @@
   font-family: "AppleSDGothicNeo";
   font-weight: 100;
   /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoL.ttf") format("truetype");
+  src: url("./AppleSDGothicNeoL.ttf") format("truetype");
 }
 @font-face {
   font-family: "AppleSDGothicNeo";
   font-weight: 200;
   /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoM.ttf") format("truetype");
+  src: url("./AppleSDGothicNeoM.ttf") format("truetype");
 }
 @font-face {
   font-family: "AppleSDGothicNeo";
   font-weight: 300;
   /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoB.ttf") format("truetype");
+  src: url("./AppleSDGothicNeoB.ttf") format("truetype");
 }
 @font-face {
   font-family: "AppleSDGothicNeo";
   font-weight: 400;
   /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoH.ttf") format("truetype");
+  src: url("./AppleSDGothicNeoH.ttf") format("truetype");
 }
