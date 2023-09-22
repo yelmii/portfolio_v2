@@ -1,7 +1,13 @@
-import "./App.css";
-
+import "./styles/scss/layout/app.scss";
+import Main from "./pages/Main";
+import HeaderNav from "./components/HeaderNav";
 function App() {
-  return <div className="App"></div>;
+  return (
+    <>
+      <HeaderNav />
+      <Main />
+    </>
+  );
 }
 
 export default App;
