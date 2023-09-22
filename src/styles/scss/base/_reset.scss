@@ -3,23 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  width: 100%;
-  //min-width: 1200px;
   color: #333;
   font-family: "AppleSDGothicNeo";
   font-weight: 200;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    width: 12px;
-  }
-  &::-webkit-scrollbar-thumb {
-    //background-color: $color-gray-2;
-    border-radius: 2px;
-  }
-  &::-webkit-scrollbar-track {
-    //background: $color-gray-1;
-  }
+  padding: 0;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 body.modal_open {
   overflow: hidden;
@@ -27,7 +24,6 @@ body.modal_open {
 
 img {
   border: 0;
-  width: 100%;
 }
 a {
   text-decoration: none;

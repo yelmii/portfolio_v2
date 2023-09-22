@@ -1,54 +1,32 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "AppleSDGothicNeo";
-  font-weight: 100;
-  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoL.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AppleSDGothicNeo";
-  font-weight: 200;
-  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoM.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AppleSDGothicNeo";
-  font-weight: 300;
-  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoB.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AppleSDGothicNeo";
-  font-weight: 400;
-  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
-  src: url("../font/AppleSDGothicNeoH.ttf") format("truetype");
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  width: 100%;
   color: #333;
   font-family: "AppleSDGothicNeo";
   font-weight: 200;
-  overflow-y: scroll;
+  padding: 0;
+  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
-body::-webkit-scrollbar {
-  width: 12px;
-}
-body::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-}
+
 body.modal_open {
   overflow: hidden;
 }
 
 img {
   border: 0;
-  width: 100%;
 }
 
 a {
@@ -251,4 +229,47 @@ input[type=number].width-100 {
 
 .p-LR-20 {
   padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gap-4 {
+  display: flex;
+  gap: 4px;
+}
+
+.gap-10 {
+  display: flex;
+  gap: 10px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }

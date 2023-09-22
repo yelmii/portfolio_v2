@@ -41,3 +41,16 @@
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
+
+@mixin scrollBar() {
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    //background-color: $color-gray-2;
+    border-radius: 2px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+}
